@@ -1,1 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pico y Placa Bogotá | Consulta de Restricciones y Movilidad</title>
+    <meta name="description" content="Información actualizada sobre el Pico y Placa en Bogotá: horarios, días, placas, Pico y Placa Solidario y consejos de movilidad.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
+    <!-- Header -->
+    <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-3">
+            <div class="flex items-center gap-3">
+                <i class="fas fa-car text-3xl text-yellow-400"></i>
+                <div>
+                    <h1 class="text-xl font-bold">Pico y Placa Bogotá</h1>
+                    <p class="text-xs text-blue-200">Información oficial de movilidad</p>
+                </div>
+            </div>
+            <nav class="flex gap-6 text-sm">
+                <a href="#reglas" class="hover:text-yellow-300">Reglas</a>
+                <a href="#horarios" class="hover:text-yellow-300">Horarios</a>
+                <a href="#solidario" class="hover:text-yellow-300">Solidario</a>
+                <a href="#consejos" class="hover:text-yellow-300">Consejos</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Consulta Pico y Placa Bogotá</h2>
+            <p class="text-xl text-blue-100 mb-6">Información actualizada sobre restricciones, horarios y alternativas de movilidad</p>
+            <p class="text-sm bg-blue-900/50 inline-block px-4 py-2 rounded-full">
+                Última actualización: Agosto 2026 · Fuente: Secretaría Distrital de Movilidad
+            </p>
+        </div>
+    </section>
+
+    <!-- Reglas principales -->
+    <section id="reglas" class="py-14 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10 text-blue-900">¿Cómo funciona el Pico y Placa?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Días impares -->
+                <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg shadow">
+                    <h3 class="text-2xl font-bold text-green-700 mb-3">
+                        <i class="fas fa-calendar-day mr-2"></i>Días Impares
+                    </h3>
+                    <p class="text-lg mb-4">Pueden circular placas terminadas en:</p>
+                    <div class="flex flex-wrap gap-3 text-2xl font-bold text-green-800">
+                        <span class="bg-white px-4 py-2 rounded-lg shadow">1</span>
+                        <span class="bg-white px-4 py-2 rounded-lg shadow">2</span>
+                        <span class="bg-white px-4 py-2 rounded-lg shadow">3</span>
+                        <span class="bg-white px-4 py-2 rounded-lg shadow">4</span>
+                        <span class="bg-white px-4 py-2 rounded-lg shadow">5</span>
+                    </div>
+                    <p class="mt-4 text-sm text-gray-600">Ejemplo: 3, 5, 7, 9, 11, 13... del mes</p>
+                </div>
+
+                <!-- Días pares -->
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg shadow">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-3">
+                        <i class="fas fa-calendar-day mr-2"></i>Días Pares
+                    </h3>
+                    <p class="text-lg mb-4">Pueden circular placas terminadas en:</p>
+                    <div class="flex flex-wrap gap-3 text-2xl font-bold text-blue-800">
+                        <span class="bg-white px-4 py-2 rounded-lg shadow">6</span>
+                        <span class="bg-white px-4 py-2 rounded-lg shadow">7</span>
+                        <span class="bg-white px-4 py-2 rounded-lg shadow">8</span>
+                        <span class="bg-white px-4 py-2 rounded-lg shadow">9</span>
+                        <span class="bg-white px-4 py-2 rounded-lg shadow">0</span>
+                    </div>
+                    <p class="mt-4 text-sm text-gray-600">Ejemplo: 2, 4, 6, 8, 10, 12... del mes</p>
+                </div>
+            </div>
+
+            <div class="mt-10 bg-yellow-50 border border-yellow-300 rounded-xl p-6 text-center">
+                <p class="text-lg font-semibold text-yellow-800">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>
+                    La restricción se basa en el <strong>último dígito de la placa</strong> del vehículo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horarios -->
+    <section id="horarios" class="py-14 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10 text-blue-900">Horarios y días de aplicación</h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow text-center">
+                    <i class="fas fa-clock text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Horario</h3>
+                    <p class="text-2xl font-semibold text-blue-800">6:00 a.m. – 9:00 p.m.</p>
+                    <p class="text-sm text-gray-500 mt-2">Lunes a viernes</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow text-center">
+                    <i class="fas fa-calendar-check text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">No aplica</h3>
+                    <p class="text-lg">Sábados, domingos y festivos</p>
+                    <p class="text-sm text-gray-500 mt-2">(salvo Pico y Placa Regional)</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow text-center">
+                    <i class="fas fa-map-marked-alt text-4xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Ámbito</h3>
+                    <p class="text-lg">Perímetro urbano de Bogotá</p>
+                    <p class="text-sm text-gray-500 mt-2">Vehículos particulares</p>
+                </div>
+            </div>
+
+            <!-- Pico y Placa Regional -->
+            <div class="mt-12 bg-white rounded-xl shadow p-8">
+                <h3 class="text-2xl font-bold text-red-700 mb-4">
+                    <i class="fas fa-road mr-2"></i>Pico y Placa Regional
+                </h3>
+                <p class="mb-4">Aplica el <strong>último día de los puentes festivos</strong> (día de retorno) en los 9 corredores principales de ingreso a Bogotá:</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li><strong>12:00 m. – 4:00 p.m.:</strong> Solo ingresan placas <span class="font-semibold text-blue-700">pares</span> (incluyendo 0)</li>
+                    <li><strong>4:00 p.m. – 8:00 p.m.:</strong> Solo ingresan placas <span class="font-semibold text-green-700">impares</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pico y Placa Solidario -->
+    <section id="solidario" class="py-14 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10 text-blue-900">Pico y Placa Solidario</h2>
+            
+            <div class="bg-blue-50 rounded-2xl p-8 max-w-3xl mx-auto">
+                <p class="text-lg mb-6">
+                    Es un permiso <strong>pago y voluntario</strong> que permite circular en los días de restricción. Los recursos se destinan al Fondo de Estabilización Tarifaria del transporte público.
+                </p>
+
+                <h4 class="font-bold text-lg mb-3">Valores base 2026 (aprox.):</h4>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex justify-between border-b pb-2">
+                        <span>Permiso por 1 día</span>
+                        <span class="font-semibold">$70.294</span>
+                    </li>
+                    <li class="flex justify-between border-b pb-2">
+                        <span>Permiso por 1 mes</span>
+                        <span class="font-semibold">$561.808</span>
+                    </li>
+                    <li class="flex justify-between">
+                        <span>Permiso por 6 meses</span>
+                        <span class="font-semibold">$2.809.311</span>
+                    </li>
+                </ul>
+                <p class="text-sm text-gray-600">
+                    * El valor final depende del avalúo, modelo, tipo de combustible y municipio de matrícula del vehículo. 
+                    Solicítalo solo a través de los canales oficiales de la Secretaría de Movilidad.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consejos de movilidad -->
+    <section id="consejos" class="py-14 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10 text-blue-900">Consejos de movilidad</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <i class="fas fa-bus text-3xl text-blue-600 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Usa el transporte público</h3>
+                    <p class="text-sm text-gray-600">TransMilenio, SITP y Metro son alternativas eficientes en días de restricción.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <i class="fas fa-bicycle text-3xl text-green-600 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Bicicleta y ciclorrutas</h3>
+                    <p class="text-sm text-gray-600">Bogotá cuenta con una amplia red de ciclorrutas. Ideal para trayectos cortos y medianos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <i class="fas fa-users text-3xl text-purple-600 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Comparte el vehículo</h3>
+                    <p class="text-sm text-gray-600">El carpooling reduce costos y congestión. Coordina con compañeros o vecinos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <i class="fas fa-mobile-alt text-3xl text-orange-600 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Consulta siempre las fuentes oficiales</h3>
+                    <p class="text-sm text-gray-600">Las reglas pueden cambiar. Revisa la web y redes de la Secretaría de Movilidad.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <i class="fas fa-exclamation-circle text-3xl text-red-600 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Evita multas</h3>
+                    <p class="text-sm text-gray-600">Circular en día restringido puede generar comparendo e inmovilización del vehículo.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <i class="fas fa-map text-3xl text-indigo-600 mb-3"></i>
+                    <h3 class="font-bold text-lg mb-2">Planifica tus rutas</h3>
+                    <p class="text-sm text-gray-600">Usa apps de tráfico en tiempo real y revisa el estado de las vías antes de salir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fuentes oficiales -->
+    <section class="py-12 bg-blue-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-6">Fuentes oficiales recomendadas</h2>
+            <div class="flex flex-wrap justify-center gap-6 text-sm">
+                <a href="https://www.movilidadbogota.gov.co" target="_blank" rel="noopener" class="hover:text-yellow-300 underline">
+                    Secretaría Distrital de Movilidad
+                </a>
+                <a href="https://bogota.gov.co" target="_blank" rel="noopener" class="hover:text-yellow-300 underline">
+                    Bogotá.gov.co
+                </a>
+                <a href="https://twitter.com/SectorMovilidad" target="_blank" rel="noopener" class="hover:text-yellow-300 underline">
+                    @SectorMovilidad
+                </a>
+            </div>
+            <p class="mt-8 text-sm text-blue-200 max-w-2xl mx-auto">
+                Esta página es solo informativa. Las medidas de Pico y Placa pueden modificarse. 
+                Siempre verifica la información en los canales oficiales de la Alcaldía de Bogotá y la Secretaría de Movilidad.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">
+        <p>Información de movilidad Bogotá · Actualizado 2026</p>
+        <p class="mt-1">No afiliado a entidades gubernamentales. Solo con fines informativos.</p>
+    </footer>
+
+</body>
+</html>
